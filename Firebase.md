@@ -49,7 +49,7 @@ import {
 } from 'firebase/auth';
 import { auth, googleProvider } from './Firebase';
 ```
-### SignInWithGoogle
+### * SignInWithGoogle
 ```js
 export const asyncSignInWithGoogle = async () => {
 	return await signInWithPopup(auth, googleProvider);
@@ -74,7 +74,12 @@ const hancleGoogleSignIn = async () => {
 //THIS IS UI
 <Button onClick={hancleGoogleSignIn}> Continue with Google </Button>
 ```
-### createUserWithEmailAndPassword 
+### * createUserWithEmailAndPassword 
 > This take a <b> Auth, Email, Password </b> as Parameters and Create new Account of User in FireStore
+```js
+export const asyncCreateUserWithEmailAndPassword = async (email: string, password: string) => {
+	return await createUserWithEmailAndPassword(auth, email, password);
+};
+```
 
 
