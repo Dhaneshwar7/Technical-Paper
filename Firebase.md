@@ -81,5 +81,29 @@ export const asyncCreateUserWithEmailAndPassword = async (email: string, passwor
 	return await createUserWithEmailAndPassword(auth, email, password);
 };
 ```
+### * SignInUserWithEmailAndPassword
+> This also takes a <b> Auth, Email, Password </b> as Parameters and Sign In Successful !!
+```js
+export const asyncSignInUserWithEmailAndPassword = async (email: string,password: string) => {
+	return  signInWithEmailAndPassword(auth, email, password);
+};
+```
+### * onAuthStateChanged || This method check for current User if Logged In Or Not 
+> This also takes a <b> Auth, Email, Password </b> as Parameters and Sign In Successful !!
+```js
+import {onAuthStateChanged} from 'firebase/auth';
+export const asyncCurrentLoggedInUser = () => {
+	return new Promise((resolve, reject) => {
+		onAuthStateChanged(auth,user => {
+				if (user) {
+					resolve(user);
+				} else {
+					resolve(null);
+				}
+			},
+			reject
+		);});};
+```
+
 
 
