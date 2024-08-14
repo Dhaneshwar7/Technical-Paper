@@ -1,10 +1,8 @@
- <img src="https://opensource.google/static/images/projects/os-projects-firebase.svg" width="50" height=""50/>
- ![Firebase](https://opensource.google/static/images/projects/os-projects-firebase.svg)
- ok
- 
- <img src"https://github.com/Dhaneshwar7/Technical-Paper/images/fibase.svg" width="300" />
-# Firebase Technical Paper
+<div align="center">
+<img src="images/fibase.svg" width="200" height="200" /> 	
+</div>
 
+# Firebase Technical Paper
 ## Some Reading Notes 
 
 ### Authentication:-
@@ -15,6 +13,30 @@ Firestore is a flexible, scalable database for mobile, web, and server developme
 Firebase Storage provides secure file uploads and downloads for Firebase apps. It is designed to scale from petabytes to exabytes, and to handle high-frequency use cases like streaming and uploading media.
 ### Firebase Hosting:-
 is a fully-managed hosting service for static and dynamic content as well as microservices. It provides fast and secure hosting with features such as SSL, custom domains, and auto-scaling.
+
+# Where i was Stuck & Solution(R&D) & Learning
+
+>[!WARNING]
+>        - In Firebase CRUD OPERATIONS Access Change Rules Section.
+>[!TIP]
+> Like This can Manipulate Operations. 
+```js
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+    allow create: if request.auth !=null && request.auth.uid == request.resource.data.userId;
+    allow update,delete :  if request.auth != null ;
+    allow read: if true;
+    }
+  }
+}
+```
+Reading Documentation And Took help of ChatGPT to undestand more
+>[Firebase Rules Documentaion](https://firebase.google.com/docs/firestore/security/get-started?hl=en&authuser=0)
+>[Structure Data in Firestore](https://firebase.google.com/docs/firestore/manage-data/structure-data?hl=en&authuser=0)
+
+
 # 𖦋 -> Firebase Structure Diagram:-
 
 This is Firebase Structure \*For Learning Purpose i created\* 
