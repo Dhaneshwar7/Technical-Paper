@@ -1,5 +1,5 @@
 <div align="center">
-<img src="images/ReactRouter.png" width="200" height="200" /> 	
+<img src="images/ReactRouter.png" width="400" height="200" /> 	
 </div>
 
 # React Router Technical Paper
