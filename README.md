@@ -6,7 +6,7 @@ These are my Learning Notes of All Technologies in different .MD files
 
 ### Go To Section (Chetsheets) :-
 1.[React Router](#react-router-cheatsheet)
-&nbsp; 2.[Firebase Cheatsheet](#firebase-cheatsheet)
+&nbsp; 2.[Firebase Cheatsheet](#2firebase-cheatsheet)
 &nbsp; 3.[React Context API](#react-context-api-cheatsheet)
 &nbsp; 4.[React Flat Folder Structure](#react-flat-folder-structure)
 &nbsp; 5.[React Redux](#react-redux)
@@ -44,7 +44,6 @@ import { BrowserRouter } from 'react-router-dom';
 `This is App.tsx`
 ```js
 import { Route, Routes } from 'react-router-dom';
-
 <Routes>
         <Route path="/" element={<MainLayout />}>
             <Route index element={<HomePage />} />
@@ -80,10 +79,8 @@ Route-->/CartChekout;
 ```js
 import { Link } from "react-router-dom";
 const navLinks=[{id:1,link:'/home'},{id:2,link:'/about'},{id:3,link:'/contactus'},{id:4,link:'/auth'}]
-
 function NavigationBar() {
-  return (
-    <div>
+  return ( <>
           <span>Logo</span>
           <ul>
                {navLinks.map(nav => (
@@ -91,9 +88,7 @@ function NavigationBar() {
                          <Link to={`/${nav.link}`}>{nav?.link.toUpperCase()}</Link>
                     </li>))}
           </ul>
-    </div>
-  );
-}
+    </>)};
 ```
 ####      * `<NavLink>`: - A <NavLink> is a special kind of <Link> that knows whether or not it is "active", "pending", or "transitioning". 
 ```js
@@ -120,17 +115,12 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<MainLayout />}>
-        <Route
-          index
-          element={<HomePage />}
-        />
+        <Route index element={<HomePage />}/>
         <Route path="aboutus" element={<AboutUs />} />
         <Route path="contactus" element={<ContactUs />} />
-...etc
+	...etc
       </Route>
-    </Routes>
-  );
-}
+    </Routes>)};
 ```
 ####      * `<useNavigate>`: - The useNavigate hook returns a function that lets you navigate programmatically, for example in an effect:
 ```js
@@ -171,7 +161,8 @@ is a fully-managed hosting service for static and dynamic content as well as mic
 
 >[!WARNING]
 >        - In Firebase CRUD OPERATIONS Access Change Rules Section.
->[!TIP]
+
+>[!NOTE]
 > Like This can Manipulate Operations. 
 ```js
 rules_version = '2';
@@ -185,10 +176,11 @@ service cloud.firestore {
   }
 }
 ```
-Reading Documentation And Took help of ChatGPT to undestand more
->[Firebase Rules Documentaion](https://firebase.google.com/docs/firestore/security/get-started?hl=en&authuser=0)
->[Structure Data in Firestore](https://firebase.google.com/docs/firestore/manage-data/structure-data?hl=en&authuser=0)
+>[!TIP]
+> Reading Documentation And Took help of ChatGPT to undestand more
 
+[Firebase Rules Documentaion](https://firebase.google.com/docs/firestore/security/get-started?hl=en&authuser=0)
+&nbsp; [Structure Data in Firestore](https://firebase.google.com/docs/firestore/manage-data/structure-data?hl=en&authuser=0)
 
 # 𖦋 -> Firebase Structure Diagram:-
 
@@ -261,13 +253,7 @@ const analytics = getAnalytics(app);
 ### Imports ⇣
 `./FirebaseAuthActions.ts`
 ```js
-import {
-	createUserWithEmailAndPassword,
-	onAuthStateChanged,
-	signInWithEmailAndPassword,
-	signInWithPopup,
-	signOut,
-} from 'firebase/auth';
+import { createUserWithEmailAndPassword,onAuthStateChanged,signInWithEmailAndPassword,signInWithPopup,signOut} from 'firebase/auth';
 import { auth, googleProvider } from './Firebase';
 ```
 ### * SignInWithGoogle
@@ -537,14 +523,18 @@ export default () => {
 <img src="images/stripe.png" width="300" height="120" /> 	
 </div>
 
-## Some Reading Notes 
+>[!IMPORTANT]
+> Some Documentation Stuff
 
 [Stripe Youtube 🔗](https://www.youtube.com/watch?v=e-whXipfRvg&feature=youtu.be)
 [Stripe Documentation 🔗](https://docs.stripe.com/stripe-js/react)
 
+## Some Reading Notes 
 
 ###  Stripe 
 Stripe's payments platform lets you accept credit cards, debit cards, and popular payment methods around the world—all with a single integration. Get access to advanced payments features like 3D Secure 2 authentication, card updates, automated retries, and more.
+
+
 
 
 
