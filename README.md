@@ -467,14 +467,14 @@ React Router is a collection of navigational components within your application.
 React Router is a collection of navigational components within your application. With the latest version, React Router v6, there are several new features and improvements over the previous versions. This article will help you understand how to use React Router in a modern React application.
 
 # ----------------------- Redux Persist CheatSheet ------------------
-<div align="center">
-<img src="images/redux-persist.png" width="300" height="150" /> 	
+<div align="center" backgroundColor="white">
+<img src="images/redux-persist-img.png" width="300" height="100" /> 	
 </div>
 
 ## Some Reading Notes 
 
-[React Redux Documentation 🔗](https://www.npmjs.com/package/redux-persist)
-[React Redux YouTube 🕹️](/later)
+[Redux Persist Documentation 🔗](https://www.npmjs.com/package/redux-persist)
+[React Redux YouTube 🕹️](https://www.youtube.com/watch?v=x30tfjNUF_8)
 
 ### Redux Persist 
 #### 1. Why use Redux Persist?
@@ -497,8 +497,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 #### 1. What does PersistGate do in this Code ?
 If you are using react, wrap your root component with PersistGate. This delays the rendering of your app's UI until your persisted state has been retrieved and saved to redux. NOTE the PersistGate loading prop can be null, or any react instance, e.g. loading={<Loading />}
 
->[!NOTE]
+>[!CAUTION]
 > I Was Writing code in TS and Stuck on this Error of createStore and Type of persistReducer.
+
+`/store.ts`
 ```js
 import { legacy_createStore as createStore } from 'redux'; <<---- So creatStore depricated and it now comes with legacy_createStore...
 import { persistStore, persistReducer } from 'redux-persist';
@@ -519,6 +521,8 @@ export default () => {
 	return { store, persistor };
 };
 ```
+>[!TIP]
+> This Resources helped me to resolve...
 ### I resolve this issue from reading this documentation
 [creatStore Docs](https://redux.js.org/api/createstore)
 
