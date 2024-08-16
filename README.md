@@ -5,15 +5,14 @@ These are my Learning Notes of All Technologies in different .MD files
 
 
 ### Go To Section (Chetsheets) :-
-1.[React Router](#react-router-cheatsheet)
-&nbsp; 2.[Firebase Cheatsheet](#2firebase-cheatsheet)
-&nbsp; 3.[React Context API](#react-context-api-cheatsheet)
-&nbsp; 4.[React Flat Folder Structure](#react-flat-folder-structure)
-&nbsp; 5.[React Redux](#react-redux)
-&nbsp; 6.[Redux Persist](#redux-persist-cheatsheet)
-&nbsp; 7.[Netlify](#netlify)
-&nbsp; 8.[Netlify](#netlify)
-&nbsp; 9.[Stripe with React js](#stripe-payment-with-react-js-cheatsheet)
+1.[React Router](#1-react-router-cheatsheet)
+&nbsp; 2.[Firebase Cheatsheet](#2-firebase-cheatsheet)
+&nbsp; 3.[React Context API](#3-react-context-api-cheatsheet)
+&nbsp; 4.[React Flat Folder Structure](#4-react-flat-folder-structure)
+&nbsp; 5.[React Redux](#5-react-redux)
+&nbsp; 6.[Redux Persist](#6-redux-persist-cheatsheet)
+&nbsp; 7.[Netlify](#7-netlify)
+&nbsp; 8.[Stripe with React js](#8-stripe-payment-with-react-js-cheatsheet)
 
 ---
 # 1. React Router Cheatsheet
