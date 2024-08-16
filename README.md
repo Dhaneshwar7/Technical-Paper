@@ -12,6 +12,7 @@ These are my Learning Notes of All Technologies in different .MD files
 &nbsp; 7.[Netlify](#netlify)
 &nbsp; 7.[Netlify](#netlify)
 &nbsp; 7.[Stripe with React js](#stripe-with-react-js)
+&nbsp; 7.[Testing](#testing-code-woOkay)
 
 # ----------------------- React Router Cheatsheet ------------------
 <div align="center">
@@ -400,6 +401,8 @@ There Are the Commands helps if stuck in Login/CLI Setup
 >And you can use `firebase logout` to logout from Firebase.
 
 🔗 [Reference Link For Reading Login Setup in Terminal](https://stackoverflow.com/questions/75563709/how-could-i-change-my-firebase-login-account-to-another-account-and-login-again)
+
+### -------- Resting Code WoOkay ------- 
 
 Next Command is 
 ```js
