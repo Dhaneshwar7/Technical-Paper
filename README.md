@@ -2,18 +2,21 @@
 These are my Learning Notes of All Technologies in different .MD files
 
 
+
+
 ### Go To Section (Chetsheets) :-
-1.[React Router](#react-router)
-&nbsp; 2.[Firebase Cheatsheet](#firebase-technical-paper)
-&nbsp; 3.[React Context API](#react-context-api)
+1.[React Router](#react-router-cheatsheet)
+&nbsp; 2.[Firebase Cheatsheet](#firebase-cheatsheet)
+&nbsp; 3.[React Context API](#react-context-api-cheatsheet)
 &nbsp; 4.[React Flat Folder Structure](#react-flat-folder-structure)
 &nbsp; 5.[React Redux](#react-redux)
-&nbsp; 6.[Redux Persist](#redux-persist)
+&nbsp; 6.[Redux Persist](#redux-persist-cheatsheet)
 &nbsp; 7.[Netlify](#netlify)
 &nbsp; 8.[Netlify](#netlify)
 &nbsp; 9.[Stripe with React js](#stripe-payment-with-react-js-cheatsheet)
 
-# ----------------------- React Router Cheatsheet ------------------
+---
+# React Router Cheatsheet
 <div align="center">
 <img src="images/ReactRouter.png" width="300" height="150" /> 	
 </div>
@@ -152,8 +155,8 @@ const hancleGoogleSignIn = async () => {
      }};
 ```
 
-
-# --------------------- Firebase CheatSheet ------------------
+---
+# Firebase CheatSheet
 <div align="center">
 <img src="images/firebase-image.png" width="400" height="120" /> 	
 </div>
@@ -429,8 +432,8 @@ Done Almost Afte That Last Step 📍
 ```js
 firebase deploy
 ```
-
-# -------------------- React Context API CheatSheet ----------------
+---
+# React Context API CheatSheet
 <div align="center">
 <img src="images/react-context.png" width="350" height="150" /> 	
 </div>
@@ -442,7 +445,8 @@ firebase deploy
 ### React Context API 
 React Router is a collection of navigational components within your application. With the latest version, React Router v6, there are several new features and improvements over the previous versions. This article will help you understand how to use React Router in a modern React application.
 
-# ----------------------- React Flat Folder Structure CheatSheet ------------------
+---
+# React Flat Folder Structure CheatSheet
 <div align="center">
 <img src="images/ReactRouter.png" width="300" height="150" /> 	
 </div>
@@ -466,7 +470,8 @@ React Router is a collection of navigational components within your application.
 ### React Redux
 React Router is a collection of navigational components within your application. With the latest version, React Router v6, there are several new features and improvements over the previous versions. This article will help you understand how to use React Router in a modern React application.
 
-# ----------------------- Redux Persist CheatSheet ------------------
+---
+# Redux Persist CheatSheet
 <div align="center" backgroundColor="white">
 <img src="images/redux-persist-img.png" width="300" height="100" /> 	
 </div>
@@ -529,7 +534,7 @@ export default () => {
 [persistReducer Type Error Docs](https://github.com/rt2zz/redux-persist/issues/1184)
 
 
-#### ---------------------------------------------------------------
+---
 # Stripe Payment with React JS CheatSheet
 <div align="center">
 <img src="images/stripe.png" width="300" height="120" /> 	
