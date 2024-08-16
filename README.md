@@ -402,8 +402,6 @@ There Are the Commands helps if stuck in Login/CLI Setup
 
 🔗 [Reference Link For Reading Login Setup in Terminal](https://stackoverflow.com/questions/75563709/how-could-i-change-my-firebase-login-account-to-another-account-and-login-again)
 
-### -------- Resting Code WoOkay ------- 
-
 Next Command is 
 ```js
 firebase init
@@ -432,6 +430,103 @@ Done Almost Afte That Last Step 📍
 ```js
 firebase deploy
 ```
+
+# ----------------------- React Context API CheatSheet ------------------
+<div align="center">
+<img src="images/ReactRouter.png" width="300" height="150" /> 	
+</div>
+
+## Some Reading Notes 
+
+[Context API Documentation 🔗](https://legacy.reactjs.org/docs/context.html)
+
+### React Context API 
+React Router is a collection of navigational components within your application. With the latest version, React Router v6, there are several new features and improvements over the previous versions. This article will help you understand how to use React Router in a modern React application.
+
+# ----------------------- React Flat Folder Structure CheatSheet ------------------
+<div align="center">
+<img src="images/ReactRouter.png" width="300" height="150" /> 	
+</div>
+
+## Some Reading Notes 
+
+[Flat Folder Structure 🔗](https://github.com/lokesh903/react-starter-kit-flat-structure)
+
+### React Flat Folder Structure 
+React Router is a collection of navigational components within your application. With the latest version, React Router v6, there are several new features and improvements over the previous versions. This article will help you understand how to use React Router in a modern React application.
+
+# ----------------------- React Redux CheatSheet ------------------
+<div align="center">
+<img src="images/ReactRouter.png" width="300" height="150" /> 	
+</div>
+
+## Some Reading Notes 
+
+[React Redux Documentation 🔗]([https://github.com/lokesh903/react-starter-kit-flat-structure](https://react-redux.js.org/))
+
+### React Redux
+React Router is a collection of navigational components within your application. With the latest version, React Router v6, there are several new features and improvements over the previous versions. This article will help you understand how to use React Router in a modern React application.
+
+# ----------------------- Redux Persist CheatSheet ------------------
+<div align="center">
+<img src="images/ReactRouter.png" width="300" height="150" /> 	
+</div>
+
+## Some Reading Notes 
+
+[React Redux Documentation 🔗](https://www.npmjs.com/package/redux-persist)
+[React Redux YouTube 🕹️](/later)
+
+### Redux Persist 
+#### 1. Why use Redux Persist?
+Redux Persist is a state management tool that allows the state in a Redux store to persist across browser and app sessions, improving user experience by pre-loading the store with persistent data. It also offers robustness against unexpected crashes and network issues, preventing data loss and offering a more reliable user experience.
+
+```js
+import { PersistGate } from 'redux-persist/integration/react'
+const { store, persistor } = configureStore();
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <App />
+      </PersistGate>
+    </Provider>
+  </React.StrictMode>
+)
+```
+#### 1. What does PersistGate do in this Code ?
+If you are using react, wrap your root component with PersistGate. This delays the rendering of your app's UI until your persisted state has been retrieved and saved to redux. NOTE the PersistGate loading prop can be null, or any react instance, e.g. loading={<Loading />}
+
+>[!NOTE]
+> I Was Writing code in TS and Stuck on this Error of createStore and Type of persistReducer.
+```js
+import { legacy_createStore as createStore } from 'redux'; <<---- So creatStore depricated and it now comes with legacy_createStore...
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
+// import { composeWithDevTools } from 'redux-devtools-extension';
+
+import rootReducer from './reducers';
+const persistConfig = {
+	key: 'root',
+	storage,
+	whitelist: ['user', 'cart', 'products'],
+};
+
+const persistedReducer = persistReducer<any, any>(persistConfig, rootReducer); <<---- and here <any, any> 
+export default () => {
+	let store = createStore(persistedReducer);
+	let persistor = persistStore(store);
+	return { store, persistor };
+};
+```
+### I resolve this issue from reading this documentation
+[creatStore Docs](https://redux.js.org/api/createstore)
+
+[persistReducer Type Error Docs](https://github.com/rt2zz/redux-persist/issues/1184)
+
+
+
 
 
 
