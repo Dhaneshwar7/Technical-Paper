@@ -1,9 +1,17 @@
 # Technical-Paper
 These are my Learning Notes of All Technologies in different .MD files
-### <a name="Firebase Technical Paper">Firebase</a>
-[Firebase](#firebase-technical-paper)
-Go to section
-Hello           <-- [Hello](#hello)  
+
+
+### Go To Section (Chetsheets) :-
+1.[React Router](#react-router)
+&nbsp; 2.[Firebase Cheatsheet](#firebase-technical-paper)
+&nbsp; 3.[React Context API](#react-context-api)
+&nbsp; 4.[React Flat Folder Structure](#react-flat-folder-structure)
+&nbsp; 5.[React Redux](#react-redux)
+&nbsp; 6.[Redux Persist](#redux-persist)
+&nbsp; 7.[Netlify](#netlify)
+&nbsp; 7.[Netlify](#netlify)
+&nbsp; 7.[Stripe with React js](#stripe-with-react-js)
 
 # ----------------------- React Router CheetSheet ------------------
 <div align="center">
@@ -14,7 +22,7 @@ Hello           <-- [Hello](#hello)
 
 [Official Website React Router 🔗](https://reactrouter.com/en/main)
 
-### React Router:-
+### React Router 
 React Router is a collection of navigational components within your application. With the latest version, React Router v6, there are several new features and improvements over the previous versions. This article will help you understand how to use React Router in a modern React application.
 
 # Where i was Stuck & Solution(R&D) & Learning
@@ -146,10 +154,6 @@ const hancleGoogleSignIn = async () => {
 
 
 # ------------------ Firebase CheatSheet ---------------
-<h2 id="hello">Hello</h2>
-
-## The Header
-
 <div align="center">
 <img src="images/fibase.svg" width="200" height="200" /> 	
 </div>
