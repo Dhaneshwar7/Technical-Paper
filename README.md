@@ -8,10 +8,10 @@ These are my Learning Notes of All Technologies in different .MD files
 1.[React Router](#1-react-router-cheatsheet)
 &nbsp; 2.[Firebase Cheatsheet](#2-firebase-cheatsheet)
 &nbsp; 3.[React Context API](#3-react-context-api-cheatsheet)
-&nbsp; 4.[React Flat Folder Structure](#4-react-flat-folder-structure)
-&nbsp; 5.[React Redux](#5-react-redux)
+&nbsp; 4.[React Flat Folder Structure](#4-react-flat-folder-structure-cheatsheet)
+&nbsp; 5.[React Redux](#5-react-redux-cheatsheet)
 &nbsp; 6.[Redux Persist](#6-redux-persist-cheatsheet)
-&nbsp; 7.[Netlify](#7-netlify)
+&nbsp; 7.[Netlify](#7-netlify-cheatsheet)
 &nbsp; 8.[Stripe with React js](#8-stripe-payment-with-react-js-cheatsheet)
 
 ---
@@ -448,11 +448,11 @@ React Router is a collection of navigational components within your application.
 
 [React Redux Documentation 🔗]([https://github.com/lokesh903/react-starter-kit-flat-structure](https://react-redux.js.org/))
 
-### React Redux
+# React Redux
 React Router is a collection of navigational components within your application. With the latest version, React Router v6, there are several new features and improvements over the previous versions. This article will help you understand how to use React Router in a modern React application.
 
 ---
-# Redux Persist CheatSheet
+# 6. Redux Persist CheatSheet
 <div align="center" backgroundColor="white">
 <img src="images/redux-persist-img.png" width="300" height="100" /> 	
 </div>
@@ -516,7 +516,16 @@ export default () => {
 
 
 ---
-# Stripe Payment with React JS CheatSheet
+# 7. Netlify CheatSheet
+<div align="center">
+<img src="images/netlify.avif" width="300" height="120" /> 	
+</div>
+
+
+
+
+---
+# 8. Stripe Payment with React JS CheatSheet
 
 <div align="center">
 <img src="images/stripe.png" width="300" height="120" /> 	
