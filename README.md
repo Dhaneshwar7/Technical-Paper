@@ -13,7 +13,7 @@ These are my Learning Notes of All Technologies in different .MD files
 &nbsp; 7.[Netlify](#netlify)
 &nbsp; 7.[Stripe with React js](#stripe-with-react-js)
 
-# ----------------------- React Router CheatSheet ------------------
+# ----------------------- React Router Cheatsheet ------------------
 <div align="center">
 <img src="images/ReactRouter.png" width="300" height="150" /> 	
 </div>
