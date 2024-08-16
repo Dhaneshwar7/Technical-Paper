@@ -11,7 +11,7 @@ These are my Learning Notes of All Technologies in different .MD files
 &nbsp; 6.[Redux Persist](#redux-persist)
 &nbsp; 7.[Netlify](#netlify)
 &nbsp; 8.[Netlify](#netlify)
-&nbsp; 9.[Stripe with React js](#stripe)
+&nbsp; 9.[Stripe with React js](#stripe-payment-with-react-js-cheatsheet)
 
 # ----------------------- React Router Cheatsheet ------------------
 <div align="center">
@@ -529,7 +529,8 @@ export default () => {
 [persistReducer Type Error Docs](https://github.com/rt2zz/redux-persist/issues/1184)
 
 
-# ------------- Stripe Payment with React JS CheatSheet -----------
+#### ---------------------------------------------------------------
+# Stripe Payment with React JS CheatSheet
 <div align="center">
 <img src="images/stripe.png" width="300" height="120" /> 	
 </div>
