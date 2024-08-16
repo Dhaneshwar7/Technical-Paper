@@ -16,7 +16,7 @@ These are my Learning Notes of All Technologies in different .MD files
 &nbsp; 9.[Stripe with React js](#stripe-payment-with-react-js-cheatsheet)
 
 ---
-# React Router Cheatsheet
+# 1. React Router Cheatsheet
 <div align="center">
 <img src="images/ReactRouter.png" width="300" height="150" /> 	
 </div>
@@ -57,12 +57,6 @@ import { Route, Routes } from 'react-router-dom';
         </Route>
 </Routes>
 ```
-
-
-Reading Documentation And Took help of ChatGPT to undestand more
->[Firebase Rules Documentaion]([https://firebase.google.com/docs/firestore/security/get-started?hl=en&authuser=0](https://reactrouter.com/en/main))
->[Structure Data in Firestore]([https://firebase.google.com/docs/firestore/manage-data/structure-data?hl=en&authuser=0](https://reactrouter.com/en/main))
-
 
 ## 𖦋 -> React Router Structure Diagram:-
 
@@ -156,7 +150,7 @@ const hancleGoogleSignIn = async () => {
 ```
 
 ---
-# Firebase CheatSheet
+# 2. Firebase CheatSheet
 <div align="center">
 <img src="images/firebase-image.png" width="400" height="120" /> 	
 </div>
@@ -433,7 +427,7 @@ Done Almost Afte That Last Step 📍
 firebase deploy
 ```
 ---
-# React Context API CheatSheet
+# 3. React Context API CheatSheet
 <div align="center">
 <img src="images/react-context.png" width="350" height="150" /> 	
 </div>
@@ -446,7 +440,7 @@ firebase deploy
 React Router is a collection of navigational components within your application. With the latest version, React Router v6, there are several new features and improvements over the previous versions. This article will help you understand how to use React Router in a modern React application.
 
 ---
-# React Flat Folder Structure CheatSheet
+# 4. React Flat Folder Structure CheatSheet
 <div align="center">
 <img src="images/ReactRouter.png" width="300" height="150" /> 	
 </div>
@@ -458,7 +452,9 @@ React Router is a collection of navigational components within your application.
 ### React Flat Folder Structure 
 React Router is a collection of navigational components within your application. With the latest version, React Router v6, there are several new features and improvements over the previous versions. This article will help you understand how to use React Router in a modern React application.
 
-# ----------------------- React Redux CheatSheet ------------------
+---
+ # 5. React Redux CheatSheet
+ 
 <div align="center">
 <img src="images/react-redux.png" width="300" height="150" /> 	
 </div>
@@ -536,6 +532,7 @@ export default () => {
 
 ---
 # Stripe Payment with React JS CheatSheet
+
 <div align="center">
 <img src="images/stripe.png" width="300" height="120" /> 	
 </div>
