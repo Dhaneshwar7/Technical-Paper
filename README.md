@@ -3,8 +3,8 @@ These are my Learning Notes of All Technologies in different .MD files
 
 
 ### Go To Section (Chetsheets) :-
-1.[React Router](#react-router)
-&nbsp; 2.[Firebase Cheatsheet](#firebase-technical-paper)
+1.[React Router](#react-router-cheetSheet)
+&nbsp; 2.[Firebase Cheatsheet](#firebase-cheatSheet)
 &nbsp; 3.[React Context API](#react-context-api)
 &nbsp; 4.[React Flat Folder Structure](#react-flat-folder-structure)
 &nbsp; 5.[React Redux](#react-redux)
