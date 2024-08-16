@@ -12,7 +12,7 @@ These are my Learning Notes of All Technologies in different .MD files
 &nbsp; 7.[Netlify](#netlify)
 &nbsp; 7.[Netlify](#netlify)
 &nbsp; 7.[Stripe with React js](#stripe-with-react-js)
-&nbsp; 7.[Testing](#testing-code-woOkay)
+&nbsp; 7.[Testing](#testing-code-wookay)
 
 # ----------------------- React Router Cheatsheet ------------------
 <div align="center">
