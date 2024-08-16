@@ -10,9 +10,8 @@ These are my Learning Notes of All Technologies in different .MD files
 &nbsp; 5.[React Redux](#react-redux)
 &nbsp; 6.[Redux Persist](#redux-persist)
 &nbsp; 7.[Netlify](#netlify)
-&nbsp; 7.[Netlify](#netlify)
-&nbsp; 7.[Stripe with React js](#stripe-with-react-js)
-&nbsp; 7.[Testing](#testing-code-wookay)
+&nbsp; 8.[Netlify](#netlify)
+&nbsp; 9.[Stripe with React js](#stripe)
 
 # ----------------------- React Router Cheatsheet ------------------
 <div align="center">
@@ -154,9 +153,9 @@ const hancleGoogleSignIn = async () => {
 ```
 
 
-# ------------------ Firebase CheatSheet ---------------
+# --------------------- Firebase CheatSheet ------------------
 <div align="center">
-<img src="images/fibase.svg" width="200" height="200" /> 	
+<img src="images/firebase-image.png" width="400" height="120" /> 	
 </div>
 
 # Firebase Technical Paper
@@ -431,9 +430,9 @@ Done Almost Afte That Last Step 📍
 firebase deploy
 ```
 
-# ----------------------- React Context API CheatSheet ------------------
+# -------------------- React Context API CheatSheet ----------------
 <div align="center">
-<img src="images/ReactRouter.png" width="300" height="150" /> 	
+<img src="images/react-context.png" width="350" height="150" /> 	
 </div>
 
 ## Some Reading Notes 
@@ -457,7 +456,7 @@ React Router is a collection of navigational components within your application.
 
 # ----------------------- React Redux CheatSheet ------------------
 <div align="center">
-<img src="images/ReactRouter.png" width="300" height="150" /> 	
+<img src="images/react-redux.png" width="300" height="150" /> 	
 </div>
 
 ## Some Reading Notes 
@@ -469,7 +468,7 @@ React Router is a collection of navigational components within your application.
 
 # ----------------------- Redux Persist CheatSheet ------------------
 <div align="center">
-<img src="images/ReactRouter.png" width="300" height="150" /> 	
+<img src="images/redux-persist.png" width="300" height="150" /> 	
 </div>
 
 ## Some Reading Notes 
@@ -524,6 +523,21 @@ export default () => {
 [creatStore Docs](https://redux.js.org/api/createstore)
 
 [persistReducer Type Error Docs](https://github.com/rt2zz/redux-persist/issues/1184)
+
+
+# ------------- Stripe Payment with React JS CheatSheet -----------
+<div align="center">
+<img src="images/stripe.png" width="300" height="120" /> 	
+</div>
+
+## Some Reading Notes 
+
+[Stripe Youtube 🔗](https://www.youtube.com/watch?v=e-whXipfRvg&feature=youtu.be)
+[Stripe Documentation 🔗](https://docs.stripe.com/stripe-js/react)
+
+
+###  Stripe 
+Stripe's payments platform lets you accept credit cards, debit cards, and popular payment methods around the world—all with a single integration. Get access to advanced payments features like 3D Secure 2 authentication, card updates, automated retries, and more.
 
 
 
