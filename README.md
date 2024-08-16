@@ -3,7 +3,7 @@ These are my Learning Notes of All Technologies in different .MD files
 
 
 ### Go To Section (Chetsheets) :-
-1.[React Router](#react-router-cheetSheet)
+1.[React Router](#react-router-cheatsheet)
 &nbsp; 2.[Firebase Cheatsheet](#firebase-cheatsheet)
 &nbsp; 3.[React Context API](#react-context-api)
 &nbsp; 4.[React Flat Folder Structure](#react-flat-folder-structure)
@@ -13,7 +13,7 @@ These are my Learning Notes of All Technologies in different .MD files
 &nbsp; 7.[Netlify](#netlify)
 &nbsp; 7.[Stripe with React js](#stripe-with-react-js)
 
-# ----------------------- React Router CheetSheet ------------------
+# ----------------------- React Router CheatSheet ------------------
 <div align="center">
 <img src="images/ReactRouter.png" width="300" height="150" /> 	
 </div>
