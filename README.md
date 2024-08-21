@@ -1,18 +1,19 @@
 # Technical-Paper
 These are my Learning Notes of All Technologies in different .MD files
 
+###  Go To Chetsheets Section TopicWise .MD File - Specific
+| TOPICS | LINKS |
+| --- | --- |
+| React Router| [React Router CheatSheet](#1-react-router-cheatsheet)|
+| Firebase| [Firebase CheatSheet](#2-firebase-cheatsheet)|
+| React Context API | [React Context API CheatSheet](#3-react-context-api-cheatsheet)|
+| React Flat Folder Structure | [React Flat Folder Structure CheatSheet](#4-react-flat-folder-structure-cheatsheet) |
+| React Redux | [React Redux CheatSheet](#5-react-redux-cheatsheet)|
+| Redux Persist | [Redux Persist CheatSheet](#6-redux-persist-cheatsheet)|
+| Netlify | [Netlify CheatSheet](#7-netlify-cheatsheet)|
+| Stripe with React.js | [Stripe with React.js CheatSheet](#8-stripe-payment-with-react-js-cheatsheet)|
+| React Hook Form | [React Hook Form CheatSheet](#-9-react-hook-form)|
 
-
-
-### Go To Section (Chetsheets) :-
-1.[React Router](#1-react-router-cheatsheet)
-&nbsp; 2.[Firebase Cheatsheet](#2-firebase-cheatsheet)
-&nbsp; 3.[React Context API](#3-react-context-api-cheatsheet)
-&nbsp; 4.[React Flat Folder Structure](#4-react-flat-folder-structure-cheatsheet)
-&nbsp; 5.[React Redux](#5-react-redux-cheatsheet)
-&nbsp; 6.[Redux Persist](#6-redux-persist-cheatsheet)
-&nbsp; 7.[Netlify](#7-netlify-cheatsheet)
-&nbsp; 8.[Stripe with React js](#8-stripe-payment-with-react-js-cheatsheet)
 
 ---
 # 1. React Router Cheatsheet
@@ -543,9 +544,109 @@ export default () => {
 Stripe's payments platform lets you accept credit cards, debit cards, and popular payment methods around the world—all with a single integration. Get access to advanced payments features like 3D Secure 2 authentication, card updates, automated retries, and more.
 
 
+---
+# 9. React Hook Form
+<div align="center">
+<img src="images/react-hook-form.png" alt="React Hook Form img" width="300" height="120" /> 	
+</div>
 
+>[!IMPORTANT]
+> Some Documentation Stuff
 
+[React Hook Docs 🔗](https://react-hook-form.com/get-started#Quickstart)
 
+### What is React Hook Form?
+React Hook Form takes a slightly different approach than other form libraries in the React ecosystem by using uncontrolled inputs with ref instead of depending on the state to control the inputs. This approach makes the forms more performant and reduces the number of re-renders. This also means that React Hook Form offers seamless integration with UI libraries because most libraries support the ref attribute.
 
+>To install React Hook Form, run the following command:
+```
+npm install react-hook-form
+```
+>First, import the useForm Hook from the react-hook-form package:
+```js
+import { useForm } from "react-hook-form";
+```
+>Then, inside your component, use the Hook as follows:
+```js
+const { register, handleSubmit } = useForm();
+```
+The useForm Hook returns an object containing a few properties. For now, we’ll only require `register` and `handleSubmit`
 
+>To register the input, we’ll pass the register method into the input field as such:
+```js
+<input type="text" name="firstName" {...register('firstName')} />
+```
+	
+```js
+import React from "react";
+import { useForm } from "react-hook-form";
 
+const RegisterForm = () => {
+  const { register, handleSubmit } = useForm();
+  const handleRegistration = (data) => console.log(data); //other Logic of Submit Form
+
+  return (
+    <form onSubmit={handleSubmit(handleRegistration)}>
+      <div>
+        <label>Name</label>
+        <input name="name" {...register('name')} />
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email" name="email" {...register('email')} />
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="password" name="password" {...register('password')} />
+      </div>
+      <button>Submit</button>
+    </form>
+  );
+};
+export default RegisterForm;
+```
+
+<details>
+<summary><strong>TypeScript</strong></summary>
+	
+```typescript
+import { useForm, SubmitHandler } from "react-hook-form"
+type FormInputs = {
+  email: string
+  password: string
+}
+export default function SignInForm() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<Inputs>()
+
+  const onSubmit: SubmitHandler<FormInputs> = (data) => console.log(data)
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <input defaultValue="test" {...register("email",{ required: true, maxLength: 15 })} />
+	{errors?.name && errors.name.message}
+
+      <input {...register("password", { required: true })} />
+      {errors?.pas && <span>This field is required</span>}
+      <input type="submit" />
+    </form>
+  )
+}
+```
+</details>
+
+> Applicable validation
+React Hook Form makes form validation easy by aligning with the existing HTML standard for form validation.
+
+ ### List of validation rules supported:
+ 
+`required`
+`min`
+`max`
+`minLength`
+`maxLength`
+`pattern`
+`validate`
