@@ -447,7 +447,7 @@ React Router is a collection of navigational components within your application.
 
 ## Some Reading Notes 
 
-[React Redux Documentation 🔗]([https://github.com/lokesh903/react-starter-kit-flat-structure](https://react-redux.js.org/))
+[React Redux Documentation 🔗](https://react-redux.js.org/)
 
 # React Redux
 React Router is a collection of navigational components within your application. With the latest version, React Router v6, there are several new features and improvements over the previous versions. This article will help you understand how to use React Router in a modern React application.
@@ -522,8 +522,23 @@ export default () => {
 <img src="images/netlify.avif" width="300" height="120" /> 	
 </div>
 
+## Some Reading Notes 
+### Netlify
+Netlify is a remote-first cloud computing company that offers a development platform that includes build, deploy, and serverless backend services for web applications and dynamic websites
 
+### Serverless Functions of Netlify 
+Netlify Serverless Functions allow you to run backend code without managing a server. These functions are hosted on Netlify's infrastructure, automatically scaled, and executed on-demand in response to HTTP requests. They are commonly used to handle tasks such as form submissions, API calls, or custom business logic in a serverless environment.
+```js
+// netlify/functions/hello.js
 
+exports.handler = async function(event, context) {
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message: 'Hello, world!' })
+  };
+};
+
+```
 
 ---
 # 8. Stripe Payment with React JS CheatSheet
